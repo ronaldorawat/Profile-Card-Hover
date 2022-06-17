@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  height: 400px;
+  width: 320px;
+  border-radius: 15px;
+  margin: 0 2rem;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  position: relative;
+}
+.card .content {
+  height: 97%;
+  width: 97%;
+  border: 1px solid yellow;
+  position: absolute;
+  left: -50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease-in-out;
+  border-radius: 15px;
+}
+.card .content .inner-content {
+  padding: 1rem 1.5rem;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.card .content .inner-content .icons {
+  display: flex;
+  flex-direction: column;
+}
+.card .content .inner-content .icons i {
+  padding: 0.5rem 0;
+}
+.card .content .inner-content h3 {
+  font-size: 1.7rem;
+}
+.card:hover .content {
+  left: 50%;
+}
+
+.card-1 {
+  background: url(./Images/CR7-Jacob\ &\ CO.jpg);
+  background-position: right;
+  background-size: 583px;
+}
+.card-1:hover {
+  background-position: right;
+  background-size: 200px;
+  box-shadow: 10px 10px 18px rgba(0, 0, 0, 0.2);
+}
+
+.card-2 {
+  background: url(./Images/selena-gomez-111a.jpg);
+  background-position: center;
+  background-size: 640px;
+}
+.card-2:hover {
+  background-position: right;
+  background-size: 250px;
+  box-shadow: 10px 10px 18px rgba(0, 0, 0, 0.2);
+}
+
+.card-3 {
+  background: url(./Images/Maite-4.jpg);
+  background-position: center center;
+  background-size: 310px;
+}
+.card-3:hover {
+  background-position: right;
+  background-size: 101px;
+  box-shadow: 10px 10px 18px rgba(0, 0, 0, 0.2);
+}/*# sourceMappingURL=style.css.map */
